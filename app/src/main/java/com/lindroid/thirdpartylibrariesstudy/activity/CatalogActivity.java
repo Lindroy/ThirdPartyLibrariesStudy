@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.lindroid.thirdpartylibrariesstudy.R;
+import com.lindroid.thirdpartylibrariesstudy.util.ActivityUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,7 +21,7 @@ public class CatalogActivity extends AppCompatActivity {
 
     @BindView(R.id.list_catalog)
     ListView listCatalog;
-    private String[] items = {"仿饿了么加入购物车旋转控件", "NumberProgressBar"};
+    public static String[] items = {"仿饿了么加入购物车旋转控件", "NumberProgressBar"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class CatalogActivity extends AppCompatActivity {
                 Toast.makeText(CatalogActivity.this, "你点击了"+items[position], Toast.LENGTH_SHORT).show();
                 switch (position){
                     case 0:
+                        ActivityUtil.startActivity(CatalogActivity.this, AnimShopButtonActivity.class);
                         break;
                     case 1:
                         break;
