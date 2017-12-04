@@ -20,14 +20,19 @@ public class CatalogActivity extends AppCompatActivity {
 
     @BindView(R.id.list_catalog)
     ListView listCatalog;
-    public static String[] items = {"仿饿了么加入购物车旋转控件", "PasscodeView", "NumberProgressBar"};
+//    public static String[] items = {"仿饿了么加入购物车旋转控件",
+//            "PasscodeView",
+//            "NumberProgressBar",
+//            "CountdownView倒计时"
+//    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catalog);
         ButterKnife.bind(this);
-        listCatalog.setAdapter(new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,items));
+        ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(this, R.array.libraries, android.R.layout.simple_list_item_1);
+        listCatalog.setAdapter(arrayAdapter);
         listCatalog.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -37,6 +42,12 @@ public class CatalogActivity extends AppCompatActivity {
                         break;
                     case 1:
                         ActivityUtil.startActivity(CatalogActivity.this, PasscodeViewActivity.class);
+                        break;
+                    case 2:
+                        ActivityUtil.startActivity(CatalogActivity.this, AutoSystemBarActivity.class);
+                        break;
+                    case 3:
+                        ActivityUtil.startActivity(CatalogActivity.this, CountdownViewActivity.class);
                         break;
                     default:
                         break;

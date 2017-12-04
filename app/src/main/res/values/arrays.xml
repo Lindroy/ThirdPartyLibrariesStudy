@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="libraries">
+        <item>仿饿了么加入购物车旋转控件</item>
+        <item>PasscodeView</item>
+        <item>AutoSystemBar</item>
+        <item>CountdownView倒计时</item>
+    </string-array>
+</resources>

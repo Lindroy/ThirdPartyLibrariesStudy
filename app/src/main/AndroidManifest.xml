@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.AnimShopButtonActivity" />
-        <activity android:name=".activity.PasscodeViewActivity"></activity>
+        <activity android:name=".activity.PasscodeViewActivity" />
+        <activity android:name=".activity.AutoSystemBarActivity" />
+        <activity android:name=".activity.CountdownViewActivity"></activity>
     </application>
 
 </manifest>
