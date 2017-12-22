@@ -7,7 +7,7 @@ android {
     buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "com.lindroid.thirdpartylibrariesstudy"
-        minSdkVersion 21
+        minSdkVersion 20
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -20,25 +20,29 @@ android {
         }
     }
 }
-
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    //注解框架
-    //仿饿了么加入购物车旋转控件
-    //输入密码界面
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    /*注解框架*/
+    /*仿饿了么加入购物车旋转控件*/
+    /*输入密码界面*/
+    /*自动适配的状态栏*/
+    /*倒计时秒杀控件*/
+    /*版本更新*/
+    /*数字进度条*/
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.jakewharton:butterknife:8.8.1'
     compile 'com.github.mcxtzhang:AnimShopButton:V1.2.0'
     compile 'com.hanks:passcodeview:0.1.1'
-    //自动适配的状态栏
     compile 'cn.albert:autosystembar:1.0.1'
     compile 'com.android.support:palette-v7:25.3.1'
-    //倒计时秒杀控件
     compile 'com.github.iwgang:countdownview:2.1.6'
+    compile 'com.allenliu.versionchecklib:library:1.8.3'
+    compile 'com.daimajia.numberprogressbar:library:1.4@aar'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
+

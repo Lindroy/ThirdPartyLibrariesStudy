@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.lindroid.thirdpartylibrariesstudy.R;
+import com.lindroid.thirdpartylibrariesstudy.activity.checkversionlib.CheckVersionActivity;
 import com.lindroid.thirdpartylibrariesstudy.util.ActivityUtil;
 
 import butterknife.BindView;
@@ -48,6 +49,9 @@ public class CatalogActivity extends AppCompatActivity {
                         break;
                     case 3:
                         ActivityUtil.startActivity(CatalogActivity.this, CountdownViewActivity.class);
+                        break;
+                    case 4:
+                        ActivityUtil.startActivity(CatalogActivity.this, CheckVersionActivity.class);
                         break;
                     default:
                         break;
