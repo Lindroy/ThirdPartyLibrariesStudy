@@ -4,8 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 
 /**
- * Created by Lin on 2017/11/15.
- * Activity工具类
+ *
+ * @author linyulong
+ * @funciton Activity工具类
  */
 
 public class ActivityUtil {
