@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.EleShopDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.FlingBehavior">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@android:color/transparent"
+            app:titleEnabled="false">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/cat"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/large_text" />
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--如果不加elevation属性的话滑动到目标点后TextView会看不到-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical"
+        android:text="沙县小吃"
+        android:elevation="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:dependTargetY="-95dp"
+        app:dependType="y"
+        app:dependsOn="@+id/app_bar"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:targetX="50dp"
+        app:targetY="12dp" />
+
+    <TextView
+        android:elevation="10dp"
+        android:alpha="1"
+        app:targetAlpha="0"
+        app:dependTargetY="-95dp"
+        app:dependType="y"
+        app:dependsOn="@+id/app_bar"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:targetX="50dp"
+        app:targetY="29dp"
+        android:layout_marginLeft="100dp"
+        android:text="本店承诺，绝不适用过期地沟油"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp" />
+
+    <!--animation设置之后，targetX和targetY就不会起作用-->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/iv_avatar"
+        app:animation="@anim/anim_logo"
+        app:dependTargetY="-90dp"
+        app:dependType="y"
+        app:dependsOn="@+id/app_bar"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+
+        />
+</android.support.design.widget.CoordinatorLayout>

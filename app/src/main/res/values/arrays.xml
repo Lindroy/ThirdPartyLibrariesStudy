@@ -6,5 +6,6 @@
         <item>AutoSystemBar</item>
         <item>CountdownView倒计时</item>
         <item>版本更新和数字进度条</item>
+        <item>simple-view-behavior</item>
     </string-array>
 </resources>

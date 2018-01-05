@@ -23,8 +23,16 @@
         <activity android:name=".activity.checkversionlib.CheckVersionActivity" />
         <activity
             android:name=".activity.checkversionlib.CheckVersionDialogActivity"
-            android:theme="@style/versionCheckLibvtransparentTheme"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:theme="@style/versionCheckLibvtransparentTheme" />
+        <activity
+            android:name=".activity.simplebehavior.SimpleBehaviorActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.simplebehavior.EleShopDetailActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import com.lindroid.thirdpartylibrariesstudy.R;
 import com.lindroid.thirdpartylibrariesstudy.activity.checkversionlib.CheckVersionActivity;
+import com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.SimpleBehaviorActivity;
 import com.lindroid.thirdpartylibrariesstudy.util.ActivityUtil;
 
 import butterknife.BindView;
@@ -52,6 +53,9 @@ public class CatalogActivity extends AppCompatActivity {
                         break;
                     case 4:
                         ActivityUtil.startActivity(CatalogActivity.this, CheckVersionActivity.class);
+                        break;
+                    case 5:
+                        ActivityUtil.startActivity(CatalogActivity.this, SimpleBehaviorActivity.class);
                         break;
                     default:
                         break;
