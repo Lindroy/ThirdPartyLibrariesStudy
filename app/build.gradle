@@ -25,15 +25,15 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
-    /*输入密码界面*/
-    /*自动适配的状态栏*/
-
     //仿饿了么加入购物车旋转控件
+    //输入密码界面
+    //自动适配的状态栏
     //版本更新
     //数字进度条
-
     //simple-view-behavior
+
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.jakewharton:butterknife:8.8.1'
     compile 'com.github.mcxtzhang:AnimShopButton:V1.2.0'
@@ -44,8 +44,7 @@ dependencies {
     compile 'com.allenliu.versionchecklib:library:1.8.3'
     compile 'com.daimajia.numberprogressbar:library:1.4@aar'
     compile 'com.zoonref:simple-view-behavior:1.0'
-    compile 'com.android.support:design:26.0.0-alpha1'
-    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

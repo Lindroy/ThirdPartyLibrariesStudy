@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lindroid.thirdpartylibrariesstudy.activity.materialedittext.MaterialEditTextActivity">
+
+    <LinearLayout
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--基本样式-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editText"
+            android:hint="请输入文字"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--自定义下划线颜色(未获得焦点时)-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="10dp"
+            app:met_underlineColor="#8b3dff"
+            android:hint="自定义下划线颜色"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--自定义提示文字和输入文字字体颜色-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            app:met_baseColor="@android:color/holo_green_light"
+            android:hint="自定义字体颜色"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--自定义输入框颜色(获得焦点时的下划线颜色和floatingLabel颜色)-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="10dp"
+            android:hint="自定义输入框颜色"
+            app:met_primaryColor="@android:color/holo_orange_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--浮动提示文字-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_floatingLabelTextSize="14sp"
+            app:met_floatingLabelTextColor="@android:color/holo_red_light"
+            app:met_floatingLabelAnimating="true"
+            android:layout_marginTop="10dp"
+            android:hint="浮动提示文字"
+            app:met_floatingLabel="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--浮动提示文字-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_primaryColor="@android:color/holo_blue_light"
+            app:met_floatingLabelTextSize="14sp"
+            app:met_floatingLabelTextColor="@android:color/holo_red_light"
+            app:met_floatingLabelText="浮动提示"
+            app:met_floatingLabelAlwaysShown="true"
+            app:met_floatingLabelAnimating="true"
+            android:layout_marginTop="10dp"
+            android:hint="浮动提示文字Highlight"
+            app:met_floatingLabel="highlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--添加省略号-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="10dp"
+            app:met_singleLineEllipsis="true"
+            android:hint="添加省略号"
+            app:met_primaryColor="@android:color/holo_red_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--限制字符数-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_primaryColor="@android:color/holo_blue_light"
+            android:hint="限制字符数"
+            app:met_errorColor="@android:color/holo_purple"
+            app:met_maxCharacters="10"
+            app:met_minCharacters="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--帮助说明文字-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="10dp"
+            app:met_helperTextAlwaysShown="true"
+            app:met_helperTextColor="@android:color/holo_green_light"
+            android:hint="添加帮助说明文字"
+            app:met_helperText="这是一条帮助说明"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--显示清空输入框按钮-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_primaryColor="@android:color/holo_blue_dark"
+            android:hint="显示清空输入框按钮"
+            android:layout_marginTop="10dp"
+            app:met_clearButton="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--添加图标-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_primaryColor="@android:color/holo_green_dark"
+            android:hint="添加图标"
+            app:met_iconLeft="@mipmap/phone"
+            app:met_iconPadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

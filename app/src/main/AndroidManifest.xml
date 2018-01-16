@@ -33,6 +33,7 @@
             android:name=".activity.simplebehavior.EleShopDetailActivity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.materialedittext.MaterialEditTextActivity"></activity>
     </application>
 
 </manifest>
