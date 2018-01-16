@@ -79,5 +79,12 @@ GitHub：[https://github.com/AlexLiuSheng/CheckVersionLib](https://github.com/Al
 一个带数字的ProgressBar，用法跟ContentProgressBar差不多，简单易用。
 GitHub:[https://github.com/daimajia/NumberProgressBar](https://github.com/daimajia/NumberProgressBar)
 
+## 7、MaterialEditText
+GitHub：[https://github.com/rengwuxian/MaterialEditText](https://github.com/rengwuxian/MaterialEditText)
+
+挺不错的一个MD风格的EditText，作者是知名的开发者扔物线。试着用了一下，可以实现的效果很多，但是目前发现有一点不足：ClearButton的样式不能更换。
+
+这个在实际项目中不知道能不能用上，毕竟UI总是说要跟iOS的保持一致……
+
 
 
