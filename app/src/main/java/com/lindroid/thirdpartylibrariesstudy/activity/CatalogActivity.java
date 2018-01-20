@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.lindroid.thirdpartylibrariesstudy.R;
+import com.lindroid.thirdpartylibrariesstudy.activity.bottomnavigationbar.BottomBarActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.checkversionlib.CheckVersionActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.materialedittext.MaterialEditTextActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.SimpleBehaviorActivity;
@@ -59,6 +60,9 @@ public class CatalogActivity extends AppCompatActivity {
                         break;
                     case 6:
                         ActivityUtil.startActivity(context, MaterialEditTextActivity.class);
+                        break;
+                    case 7:
+                        ActivityUtil.startActivity(context, BottomBarActivity.class);
                         break;
                     default:
                         break;

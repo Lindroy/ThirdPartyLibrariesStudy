@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lindroid.thirdpartylibrariesstudy.activity.bottomnavigationbar.BottomBarActivity">
+
+    <Button
+        android:visibility="gone"
+        android:onClick="changeTab"
+        android:text="切换Tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_above="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        app:bnbElevation="4dp"
+        android:translationZ="2dp"
+        app:bnbActiveColor="@android:color/holo_blue_dark"
+        app:bnbBackgroundColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        app:bnbMode="mode_fixed"
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.ashokvarma.bottomnavigation.BottomNavigationBar>
+
+</RelativeLayout>
