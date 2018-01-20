@@ -9,5 +9,6 @@
         <item>simple-view-behavior</item>
         <item>MaterialEditText</item>
         <item>BottomNavigationBar</item>
+        <item>MZBanner</item>
     </string-array>
 </resources>

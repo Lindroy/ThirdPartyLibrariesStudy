@@ -12,6 +12,7 @@ import com.lindroid.thirdpartylibrariesstudy.R;
 import com.lindroid.thirdpartylibrariesstudy.activity.bottomnavigationbar.BottomBarActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.checkversionlib.CheckVersionActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.materialedittext.MaterialEditTextActivity;
+import com.lindroid.thirdpartylibrariesstudy.activity.mzbanner.MZBannerActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.SimpleBehaviorActivity;
 import com.lindroid.thirdpartylibrariesstudy.util.ActivityUtil;
 
@@ -63,6 +64,9 @@ public class CatalogActivity extends AppCompatActivity {
                         break;
                     case 7:
                         ActivityUtil.startActivity(context, BottomBarActivity.class);
+                        break;
+                    case 8:
+                        ActivityUtil.startActivity(context, MZBannerActivity.class);
                         break;
                     default:
                         break;

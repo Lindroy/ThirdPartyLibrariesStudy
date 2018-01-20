@@ -34,7 +34,10 @@
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.materialedittext.MaterialEditTextActivity" />
-        <activity android:name=".activity.bottomnavigationbar.BottomBarActivity"></activity>
+        <activity android:name=".activity.bottomnavigationbar.BottomBarActivity" />
+        <activity
+            android:name=".activity.mzbanner.MZBannerActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
