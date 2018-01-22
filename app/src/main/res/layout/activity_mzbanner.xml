@@ -5,55 +5,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@android:color/white"
     tools:context="com.lindroid.thirdpartylibrariesstudy.activity.mzbanner.MZBannerActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
+        android:fitsSystemWindows="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:fitsSystemWindows="true"
+        app:elevation="0dp"
         app:layout_behavior="com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.FlingBehavior">
 
         <android.support.design.widget.CollapsingToolbarLayout
-            app:expandedTitleTextAppearance="@style/ExpandedTitleStyle"
-            app:collapsedTitleTextAppearance="@style/CollapsedTitleStyle"
             android:id="@+id/collapse_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:fitsSystemWindows="true"
+            android:layout_height="128dp"
+            android:padding="0dp"
+            app:collapsedTitleGravity="center"
+            app:collapsedTitleTextAppearance="@style/CollapsedTitleStyle"
             app:contentScrim="@android:color/white"
-            app:title="雲澳门"
+            app:expandedTitleGravity="bottom|left"
+            app:expandedTitleMargin="0dp"
+            app:expandedTitleMarginBottom="5dp"
+            app:expandedTitleMarginStart="15dp"
+            app:expandedTitleTextAppearance="@style/ExpandedTitleStyle"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:statusBarScrim="@android:color/white"
+            app:title="雲澳門"
             app:titleEnabled="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                android:paddingTop="175dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:textSize="30dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="44dp"
+                android:gravity="center"
+                app:contentInsetEnd="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetStart="0dp"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+                app:title="雲澳門"
+                app:titleMarginEnd="0dp"
+                app:titleMarginStart="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/icon_search" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/icon_search" />
+
+            </android.support.v7.widget.Toolbar>
+
+
         </android.support.design.widget.CollapsingToolbarLayout>
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+
 
     </android.support.design.widget.AppBarLayout>
 
@@ -62,11 +80,44 @@
         android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="@string/large_text" />
+        <LinearLayout
+            android:background="#d2d2d2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="雲澳門"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="雲澳門"
+                android:textSize="30sp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="雲澳門"
+                android:textSize="30sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/large_text" />
+        </LinearLayout>
 
 
     </android.support.v4.widget.NestedScrollView>
