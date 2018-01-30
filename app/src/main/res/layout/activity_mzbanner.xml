@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:background="@android:color/white"
+    android:fitsSystemWindows="true"
     tools:context="com.lindroid.thirdpartylibrariesstudy.activity.mzbanner.MZBannerActivity">
+
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
-        android:fitsSystemWindows="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
+        android:fitsSystemWindows="true"
         app:elevation="0dp"
         app:layout_behavior="com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.FlingBehavior">
 
@@ -81,10 +82,23 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
-            android:background="#d2d2d2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#d2d2d2"
             android:orientation="vertical">
+
+            <com.zhouwei.mzbanner.MZBannerView
+                android:id="@+id/banner"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp"
+                app:open_mz_mode="true"
+                app:middle_page_cover="false"
+                app:canLoop="true"
+                app:indicatorAlign="center">
+
+            </com.zhouwei.mzbanner.MZBannerView>
 
 
             <TextView
@@ -96,20 +110,20 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:fontFamily="sans-serif-light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:text="雲澳門"
                 android:textSize="30sp" />
 
             <TextView
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="雲澳門"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
 
