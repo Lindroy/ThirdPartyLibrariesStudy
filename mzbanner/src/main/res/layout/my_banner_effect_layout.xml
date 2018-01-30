@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/holo_blue_dark">
+        android:background="@android:color/white">
 
         <LinearLayout
             android:id="@+id/banner_indicator_container"

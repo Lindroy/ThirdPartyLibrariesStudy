@@ -76,6 +76,8 @@ public class MZBannerActivity extends AppCompatActivity {
     }
 
     private void initBanner() {
+        //设置指示器的代码应该在setPages前面
+        banner.setIndicatorRes(R.drawable.shape_indicator_unselected, R.drawable.shape_indicator_selected);
         banner.setPages(imageList, new MZHolderCreator() {
             @Override
             public MZViewHolder createViewHolder() {
