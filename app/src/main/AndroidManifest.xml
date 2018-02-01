@@ -36,8 +36,9 @@
         <activity android:name=".activity.materialedittext.MaterialEditTextActivity" />
         <activity android:name=".activity.bottomnavigationbar.BottomBarActivity" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".activity.mzbanner.MZBannerActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

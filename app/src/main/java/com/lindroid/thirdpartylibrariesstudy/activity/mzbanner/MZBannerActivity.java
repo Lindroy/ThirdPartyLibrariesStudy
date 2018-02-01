@@ -3,17 +3,23 @@ package com.lindroid.thirdpartylibrariesstudy.activity.mzbanner;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.ashokvarma.bottomnavigation.BottomNavigationBar;
+import com.ashokvarma.bottomnavigation.BottomNavigationItem;
+import com.ashokvarma.bottomnavigation.ShapeBadgeItem;
+import com.ashokvarma.bottomnavigation.TextBadgeItem;
 import com.lindroid.thirdpartylibrariesstudy.R;
 import com.lindroid.thirdpartylibrariesstudy.util.status.StatusBarHelper;
 import com.zhouwei.mzbanner.MZBannerView;
@@ -41,14 +47,21 @@ public class MZBannerActivity extends AppCompatActivity {
     TextView textView2;
     @BindView(R.id.banner)
     MZBannerView banner;
+    @BindView(R.id.bottomBar)
+    BottomNavigationBar bottomBar;
 
     private List<Integer> imageList = new ArrayList<>();
     private ImageView ivBanner;
+    @Nullable
+    TextBadgeItem numberBadgeItem, numberBadgeItem2;
+
+    @Nullable
+    ShapeBadgeItem shapeBadgeItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mzbanner);
+        setContentView(R.layout.activity_mzbanner2);
         ButterKnife.bind(this);
         initData();
         StatusBarHelper.setStatusBarLightMode(this);
@@ -73,6 +86,35 @@ public class MZBannerActivity extends AppCompatActivity {
 
         initBanner();
 
+        numberBadgeItem = new TextBadgeItem()
+                .setBorderWidth(4)
+                .setBackgroundColorResource(android.R.color.holo_red_light)
+                .setBorderColor(android.R.color.holo_red_light)
+                .setText("99+")
+                .setHideOnSelect(false);
+        numberBadgeItem2 = new TextBadgeItem()
+                .setBorderWidth(4)
+                .setBackgroundColorResource(android.R.color.holo_red_light)
+                .setBorderColor(android.R.color.holo_red_light)
+                .setText("9")
+                .setHideOnSelect(false);
+
+        shapeBadgeItem = new ShapeBadgeItem()
+                .setShape(ShapeBadgeItem.SHAPE_OVAL)
+                .setShapeColorResource(android.R.color.holo_red_light)
+
+                .setGravity(Gravity.TOP | Gravity.END)
+                .setHideOnSelect(false);
+
+        bottomBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_STATIC);
+        bottomBar.addItem(new BottomNavigationItem(R.mipmap.ic_home_white_24dp, "首页"))
+                .addItem(new BottomNavigationItem(R.mipmap.ic_book_white_24dp, "书籍"))
+                .addItem(new BottomNavigationItem(R.mipmap.ic_tv_white_24dp, "电视").setBadgeItem(numberBadgeItem))
+                .addItem(new BottomNavigationItem(R.mipmap.ic_videogame_asset_white_24dp, "游戏").setBadgeItem(numberBadgeItem2))
+                .addItem(new BottomNavigationItem(R.mipmap.ic_music_note_white_24dp, "音乐"))
+                .setFirstSelectedPosition(0)
+                .initialise();
+
     }
 
     private void initBanner() {
@@ -94,14 +136,6 @@ public class MZBannerActivity extends AppCompatActivity {
             View view = LayoutInflater.from(context).inflate(R.layout.item_banner, null);
             ivBanner = view.findViewById(R.id.banner_image);
             RelativeLayout rlBanner = view.findViewById(R.id.rl_banner);
-//            int width = UIUtil.getScreenWidth(context)-StatusBarHelper.dp2px(context, 40);
-//            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(width,
-//                    LinearLayout.LayoutParams.MATCH_PARENT);
-            //设置左右边距
-//            params.leftMargin = (int) StatusBarHelper.dp2px(context, 20);
-//            params.rightMargin = (int) StatusBarHelper.dp2px(context, 20);
-//            rlBanner.setLayoutParams(params);
-//            ivBanner.setLayoutParams(params);
             return view;
         }
 
@@ -115,7 +149,6 @@ public class MZBannerActivity extends AppCompatActivity {
         imageList.add(R.drawable.cherry);
         imageList.add(R.drawable.orange);
         imageList.add(R.drawable.pineapple);
-        imageList.add(R.drawable.cherry);
 
     }
 
