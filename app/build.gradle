@@ -50,5 +50,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     compile 'com.yinglan.alphatabs:library:1.0.8'
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+
 }
 

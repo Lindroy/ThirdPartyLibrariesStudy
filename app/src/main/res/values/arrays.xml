@@ -11,5 +11,6 @@
         <item>BottomNavigationBar</item>
         <item>MZBanner</item>
         <item>AlphaTabsIndicator</item>
+        <item>PickerView</item>
     </string-array>
 </resources>

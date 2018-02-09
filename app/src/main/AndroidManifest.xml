@@ -39,7 +39,8 @@
             android:name=".activity.mzbanner.MZBannerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.alphatabsindicator.AlphaTabActivity"></activity>
+        <activity android:name=".activity.alphatabsindicator.AlphaTabActivity" />
+        <activity android:name=".activity.pickerview.PickerViewActivity"></activity>
     </application>
 
 </manifest>
