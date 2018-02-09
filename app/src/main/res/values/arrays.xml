@@ -10,5 +10,6 @@
         <item>MaterialEditText</item>
         <item>BottomNavigationBar</item>
         <item>MZBanner</item>
+        <item>AlphaTabsIndicator</item>
     </string-array>
 </resources>

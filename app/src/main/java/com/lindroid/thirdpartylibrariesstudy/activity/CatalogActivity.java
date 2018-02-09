@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.lindroid.thirdpartylibrariesstudy.R;
+import com.lindroid.thirdpartylibrariesstudy.activity.alphatabsindicator.AlphaTabActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.bottomnavigationbar.BottomBarActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.checkversionlib.CheckVersionActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.materialedittext.MaterialEditTextActivity;
@@ -67,6 +68,9 @@ public class CatalogActivity extends AppCompatActivity {
                         break;
                     case 8:
                         ActivityUtil.startActivity(context, MZBannerActivity.class);
+                        break;
+                    case 9:
+                        ActivityUtil.startActivity(context, AlphaTabActivity.class);
                         break;
                     default:
                         break;

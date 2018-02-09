@@ -36,9 +36,10 @@
         <activity android:name=".activity.materialedittext.MaterialEditTextActivity" />
         <activity android:name=".activity.bottomnavigationbar.BottomBarActivity" />
         <activity
-            android:screenOrientation="portrait"
             android:name=".activity.mzbanner.MZBannerActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.alphatabsindicator.AlphaTabActivity"></activity>
     </application>
 
 </manifest>

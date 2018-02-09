@@ -1,6 +1,7 @@
 package com.lindroid.thirdpartylibrariesstudy.activity.bottomnavigationbar;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
+import com.ashokvarma.bottomnavigation.TextBadgeItem;
 import com.lindroid.thirdpartylibrariesstudy.R;
 
 import java.util.ArrayList;
@@ -29,27 +31,41 @@ public class BottomBarActivity extends AppCompatActivity {
     ViewPager viewPager;
 
     private List<Fragment> fragmentList = new ArrayList<>();
+    @Nullable
+    TextBadgeItem numberBadgeItem;
+    private int messageCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_bar);
         ButterKnife.bind(this);
+        numberBadgeItem = new TextBadgeItem()
+                .setBorderWidth(0)
+                .setBackgroundColorResource(android.R.color.holo_red_light)
+                .setBorderColor(android.R.color.holo_red_light)
+                .setText("0")
+                .setHideOnSelect(false);
         bottomBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_STATIC);
         bottomBar.addItem(new BottomNavigationItem(R.mipmap.ic_home_white_24dp, "首页").setActiveColorResource(android.R.color.holo_orange_dark))
                 .addItem(new BottomNavigationItem(R.mipmap.ic_book_white_24dp, "书籍"))
-                .addItem(new BottomNavigationItem(R.mipmap.ic_tv_white_24dp, "电视"))
+                .addItem(new BottomNavigationItem(R.mipmap.ic_tv_white_24dp, "电视").setBadgeItem(numberBadgeItem))
                 .addItem(new BottomNavigationItem(R.mipmap.ic_videogame_asset_white_24dp, "游戏"))
                 .addItem(new BottomNavigationItem(R.mipmap.ic_music_note_white_24dp, "音乐"))
                 .setFirstSelectedPosition(0)
                 .initialise();
         initViewPager();
+
         //BottomNavigationBar的选择监听事件
         bottomBar.setTabSelectedListener(new BottomNavigationBar.OnTabSelectedListener() {
             @Override
             public void onTabSelected(int position) {
                 Toast.makeText(BottomBarActivity.this, "你点击了" + position, Toast.LENGTH_SHORT).show();
                 viewPager.setCurrentItem(position);
+                messageCount++;
+                if (numberBadgeItem != null) {
+                    numberBadgeItem.setText(String.valueOf(messageCount));
+                }
             }
 
             @Override
