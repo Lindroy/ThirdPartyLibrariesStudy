@@ -15,6 +15,7 @@ import com.lindroid.thirdpartylibrariesstudy.activity.checkversionlib.CheckVersi
 import com.lindroid.thirdpartylibrariesstudy.activity.materialedittext.MaterialEditTextActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.mzbanner.MZBannerActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.pickerview.PickerViewActivity;
+import com.lindroid.thirdpartylibrariesstudy.activity.shinebutton.ShineButtonActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.SimpleBehaviorActivity;
 import com.lindroid.thirdpartylibrariesstudy.util.ActivityUtil;
 
@@ -75,6 +76,9 @@ public class CatalogActivity extends AppCompatActivity {
                         break;
                     case 10:
                         ActivityUtil.startActivity(context, PickerViewActivity.class);
+                        break;
+                    case 11:
+                        ActivityUtil.startActivity(context, ShineButtonActivity.class);
                         break;
                     default:
                         break;

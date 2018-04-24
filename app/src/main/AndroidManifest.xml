@@ -40,7 +40,8 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.alphatabsindicator.AlphaTabActivity" />
-        <activity android:name=".activity.pickerview.PickerViewActivity"></activity>
+        <activity android:name=".activity.pickerview.PickerViewActivity" />
+        <activity android:name=".activity.shinebutton.ShineButtonActivity"></activity>
     </application>
 
 </manifest>

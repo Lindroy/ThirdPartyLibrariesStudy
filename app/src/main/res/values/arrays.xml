@@ -12,5 +12,6 @@
         <item>MZBanner</item>
         <item>AlphaTabsIndicator</item>
         <item>PickerView</item>
+        <item>ShineButton</item>
     </string-array>
 </resources>
