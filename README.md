@@ -86,5 +86,13 @@ GitHub：[https://github.com/rengwuxian/MaterialEditText](https://github.com/ren
 
 这个在实际项目中不知道能不能用上，毕竟UI总是说要跟iOS的保持一致……
 
+## 8、simple-view-behavior
+GitHub：[https://github.com/zoonooz/simple-view-behavior](https://github.com/zoonooz/simple-view-behavior)
+一个比较灵活的自定义Behavior，用法简单，但是还是有点局限，无法实现我想要的饿了么效果。
+
+## 9、Android-PickerView
+GitHub：[https://github.com/Bigkoo/Android-PickerView](https://github.com/Bigkoo/Android-PickerView)
+
+非常好用的选项选择器，但是封装的话不太方便，重复的代码有点多。
 
 
