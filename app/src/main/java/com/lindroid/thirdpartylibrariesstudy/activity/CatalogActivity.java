@@ -12,7 +12,9 @@ import com.lindroid.thirdpartylibrariesstudy.R;
 import com.lindroid.thirdpartylibrariesstudy.activity.alphatabsindicator.AlphaTabActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.bottomnavigationbar.BottomBarActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.checkversionlib.CheckVersionActivity;
+import com.lindroid.thirdpartylibrariesstudy.activity.easypermissions.EasypermissionsActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.materialedittext.MaterialEditTextActivity;
+import com.lindroid.thirdpartylibrariesstudy.activity.matisse.MatisseActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.mzbanner.MZBannerActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.SimpleBehaviorActivity;
 import com.lindroid.thirdpartylibrariesstudy.util.ActivityUtil;
@@ -71,6 +73,12 @@ public class CatalogActivity extends AppCompatActivity {
                         break;
                     case 9:
                         ActivityUtil.startActivity(context, AlphaTabActivity.class);
+                        break;
+                    case 10:
+                        ActivityUtil.startActivity(context, MatisseActivity.class);
+                        break;
+                    case 11:
+                        ActivityUtil.startActivity(context, EasypermissionsActivity.class);
                         break;
                     default:
                         break;

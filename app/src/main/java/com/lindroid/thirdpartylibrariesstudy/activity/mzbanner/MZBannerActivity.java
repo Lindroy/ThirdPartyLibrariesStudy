@@ -13,7 +13,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
@@ -134,8 +133,8 @@ public class MZBannerActivity extends AppCompatActivity {
         public View createView(Context context) {
             // 返回页面布局
             View view = LayoutInflater.from(context).inflate(R.layout.item_banner, null);
-            ivBanner = view.findViewById(R.id.banner_image);
-            RelativeLayout rlBanner = view.findViewById(R.id.rl_banner);
+//            ivBanner = view.findViewById(R.id.banner_image);
+//            RelativeLayout rlBanner = view.findViewById(R.id.rl_banner);
             return view;
         }
 

@@ -11,5 +11,7 @@
         <item>BottomNavigationBar</item>
         <item>MZBanner</item>
         <item>AlphaTabsIndicator</item>
+        <item>Matisse</item>
+        <item>Easypermissions</item>
     </string-array>
 </resources>
