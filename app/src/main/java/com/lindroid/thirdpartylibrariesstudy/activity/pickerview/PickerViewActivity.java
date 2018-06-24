@@ -2,10 +2,9 @@ package com.lindroid.thirdpartylibrariesstudy.activity.pickerview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 
-import com.bigkoo.pickerview.OptionsPickerView;
+import com.bigkoo.pickerview.view.OptionsPickerView;
 import com.lindroid.thirdpartylibrariesstudy.R;
 
 import java.util.ArrayList;
@@ -33,12 +32,12 @@ public class PickerViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_picker_view);
         ButterKnife.bind(this);
         initData();
-        multipleOp = new OptionsPickerView.Builder(this, new OptionsPickerView.OnOptionsSelectListener() {
+       /* multipleOp = new OptionsPickerView.Builder(this, new OptionsPickerView.OnOptionsSelectListener() {
             @Override
             public void onOptionsSelect(int options1, int options2, int options3, View v) {
 
             }
-        }).build();
+        }).build();*/
         multipleOp.setPicker(optionData1, optionData2);
     }
 
