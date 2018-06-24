@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lindroid.thirdpartylibrariesstudy.activity.shinebutton.ShineButtonActivity">
+
+
+    <com.sackcentury.shinebuttonlib.ShineButton
+        app:btn_color="@android:color/darker_gray"
+        android:id="@+id/shine_btn"
+        android:layout_margin="20dp"
+        app:siShape="@mipmap/ic_book_white_24dp"
+        android:src="@android:color/darker_gray"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:allow_random_color="false"
+        app:shine_animation_duration="500"
+        app:big_shine_color="@android:color/holo_blue_dark"
+        app:click_animation_duration="500"
+        app:shine_count="5"
+        app:shine_size="20dp"
+        app:small_shine_color="@android:color/holo_red_light" />
+    <!--app:btn_color="@android:color/darker_gray"-->
+    <!--app:btn_fill_color="#ff6666"-->
+</LinearLayout>
