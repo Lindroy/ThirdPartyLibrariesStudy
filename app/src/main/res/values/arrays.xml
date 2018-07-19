@@ -13,5 +13,6 @@
         <item>AlphaTabsIndicator</item>
         <item>Matisse</item>
         <item>Easypermissions</item>
+        <item>SwipeRecyclerView</item>
     </string-array>
 </resources>

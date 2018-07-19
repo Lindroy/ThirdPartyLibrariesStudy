@@ -17,6 +17,7 @@ import com.lindroid.thirdpartylibrariesstudy.activity.materialedittext.MaterialE
 import com.lindroid.thirdpartylibrariesstudy.activity.matisse.MatisseActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.mzbanner.MZBannerActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.SimpleBehaviorActivity;
+import com.lindroid.thirdpartylibrariesstudy.activity.swiperecyclerview.SwipeRecyclerViewActivity;
 import com.lindroid.thirdpartylibrariesstudy.util.ActivityUtil;
 
 import butterknife.BindView;
@@ -79,6 +80,9 @@ public class CatalogActivity extends AppCompatActivity {
                         break;
                     case 11:
                         ActivityUtil.startActivity(context, EasypermissionsActivity.class);
+                        break;
+                    case 12:
+                        ActivityUtil.startActivity(context, SwipeRecyclerViewActivity.class);
                         break;
                     default:
                         break;
