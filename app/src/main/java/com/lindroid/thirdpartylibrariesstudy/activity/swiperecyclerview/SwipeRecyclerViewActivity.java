@@ -16,7 +16,6 @@ import com.zhy.adapter.recyclerview.base.ViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -62,6 +61,7 @@ public class SwipeRecyclerViewActivity extends AppCompatActivity {
                 new Handler(new Handler.Callback() {
                     @Override
                     public boolean handleMessage(Message msg) {
+                        loadData();
                         swipeRefresh.setRefreshing(false);
                         return false;
                     }
@@ -69,7 +69,10 @@ public class SwipeRecyclerViewActivity extends AppCompatActivity {
             }
         });
 
-        rvSwipe.useDefaultLoadMore();
+//        rvSwipe.useDefaultLoadMore();
+        CustomLoadMoreView customLoadMoreView = new CustomLoadMoreView(this);
+        rvSwipe.setLoadMoreView(customLoadMoreView);
+        rvSwipe.addFooterView(customLoadMoreView);
         rvSwipe.setLoadMoreListener(new SwipeMenuRecyclerView.LoadMoreListener() {
             @Override
             public void onLoadMore() {
@@ -87,11 +90,13 @@ public class SwipeRecyclerViewActivity extends AppCompatActivity {
                 rvSwipe.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        for (int i = 1; i < 5; i++) {
-                            titles.add(new StringBuffer("上拉加载的数据").append(i).toString());
+                        if (titles.size() < 60) {
+                            for (int i = 1; i < 5; i++) {
+                                titles.add(new StringBuffer("上拉加载的数据").append(i).toString());
+                            }
                         }
                         adapter.notifyDataSetChanged();
-                        rvSwipe.loadMoreFinish(false, titles.size() <= 70);
+                        rvSwipe.loadMoreFinish(false, true);
                     }
                 }, 2000);
             }

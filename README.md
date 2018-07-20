@@ -62,7 +62,7 @@ GitHub：[https://github.com/iwgang/CountdownView](https://github.com/iwgang/Cou
                 countdownView.setOnCountdownEndListener(new CountdownView.OnCountdownEndListener() {
                     @Override
                     public void onEnd(CountdownView cv) {
-                        
+
                     }
                 });
 ```
@@ -76,8 +76,8 @@ GitHub：[https://github.com/AlexLiuSheng/CheckVersionLib](https://github.com/Al
 2. 设置强制更新后，默认的更新对话框还有取消按钮，而且点击后对话框消失，没有起到强制的作用。所以我采用了自定义更新提醒对话框。
 
 ## 6、NumberProgressBar
-一个带数字的ProgressBar，用法跟ContentProgressBar差不多，简单易用。
 GitHub:[https://github.com/daimajia/NumberProgressBar](https://github.com/daimajia/NumberProgressBar)
+一个带数字的ProgressBar，用法跟ContentProgressBar差不多，简单易用。
 
 ## 7、MaterialEditText
 GitHub：[https://github.com/rengwuxian/MaterialEditText](https://github.com/rengwuxian/MaterialEditText)
@@ -92,11 +92,16 @@ GitHub：[https://github.com/zoonooz/simple-view-behavior](https://github.com/zo
 
 ## 9、Android-PickerView
 GitHub：[https://github.com/Bigkoo/Android-PickerView](https://github.com/Bigkoo/Android-PickerView)
-
 非常好用的选项选择器，但是封装的话不太方便，重复的代码有点多。
 
 ## 10、ShineButton
 GitHub：[https://github.com/ChadCSong/ShineButton](https://github.com/ChadCSong/ShineButton)
 动画效果挺好看的，但是要求png图片（SVG应该也可以）。
+
+## 11、SwipeRecyclerView
+GitHub：[https://github.com/yanzhenjie/SwipeRecyclerView](https://github.com/yanzhenjie/SwipeRecyclerView)
+功能比较齐全，但是可以自定义上拉加载更多时有一个问题：# 自定义加载更多的布局Gone掉后，列表底部还是有相同高度的空白布局（GitHub中#194issue）。
+
+
 
 
