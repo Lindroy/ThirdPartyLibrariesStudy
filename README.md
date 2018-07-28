@@ -102,6 +102,10 @@ GitHub：[https://github.com/ChadCSong/ShineButton](https://github.com/ChadCSong
 GitHub：[https://github.com/yanzhenjie/SwipeRecyclerView](https://github.com/yanzhenjie/SwipeRecyclerView)
 功能比较齐全，但是可以自定义上拉加载更多时有一个问题：# 自定义加载更多的布局Gone掉后，列表底部还是有相同高度的空白布局（GitHub中#194issue）。
 
+## 12、SmartRefreshLayout
+GitHub地址：[https://github.com/scwang90/SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
+令人爱不释手的下拉刷新上拉加载库。如果要修改“没有数据了”这些文字，可以在strings.xml中创建key相同的string资源。但要放进中文简体语言的string文件中。
+
 
 
 

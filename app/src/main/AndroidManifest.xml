@@ -45,7 +45,8 @@
         <activity android:name=".activity.alphatabsindicator.AlphaTabActivity" />
         <activity android:name=".activity.matisse.MatisseActivity" />
         <activity android:name=".activity.easypermissions.EasypermissionsActivity" />
-        <activity android:name=".activity.swiperecyclerview.SwipeRecyclerViewActivity"></activity>
+        <activity android:name=".activity.swiperecyclerview.SwipeRecyclerViewActivity" />
+        <activity android:name=".activity.smartrefresh.SmartRefreshActivity"></activity>
     </application>
 
 </manifest>

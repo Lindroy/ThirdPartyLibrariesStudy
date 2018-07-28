@@ -14,5 +14,6 @@
         <item>Matisse</item>
         <item>Easypermissions</item>
         <item>SwipeRecyclerView</item>
+        <item>SmartRefresh</item>
     </string-array>
 </resources>

@@ -3,6 +3,7 @@ package com.lindroid.thirdpartylibrariesstudy.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -17,6 +18,7 @@ import com.lindroid.thirdpartylibrariesstudy.activity.materialedittext.MaterialE
 import com.lindroid.thirdpartylibrariesstudy.activity.matisse.MatisseActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.mzbanner.MZBannerActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.simplebehavior.SimpleBehaviorActivity;
+import com.lindroid.thirdpartylibrariesstudy.activity.smartrefresh.SmartRefreshActivity;
 import com.lindroid.thirdpartylibrariesstudy.activity.swiperecyclerview.SwipeRecyclerViewActivity;
 import com.lindroid.thirdpartylibrariesstudy.util.ActivityUtil;
 
@@ -39,6 +41,7 @@ public class CatalogActivity extends AppCompatActivity {
         setContentView(R.layout.activity_catalog);
         ButterKnife.bind(this);
         context = CatalogActivity.this;
+        debugTest();
         ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(this, R.array.libraries, android.R.layout.simple_list_item_1);
         listCatalog.setAdapter(arrayAdapter);
         listCatalog.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -84,10 +87,25 @@ public class CatalogActivity extends AppCompatActivity {
                     case 12:
                         ActivityUtil.startActivity(context, SwipeRecyclerViewActivity.class);
                         break;
+                    case 13:
+                        ActivityUtil.startActivity(context, SmartRefreshActivity.class);
+                        break;
                     default:
                         break;
                 }
             }
         });
+    }
+
+    private void debugTest() {
+        for (int i = 0; i < 10; i++) {
+            int selector = i;
+            Log.e("Tag", "当前i=" + i);
+            stepNext(i);
+        }
+    }
+
+    private void stepNext(int i) {
+        Log.e("Tag", "stepNext当前的i值=" + i);
     }
 }

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="srl_footer_nothing">数据加载完了</string>
+    <string name="srl_header_update">上次更新的时间 M-d HH:mm</string>
+</resources>
